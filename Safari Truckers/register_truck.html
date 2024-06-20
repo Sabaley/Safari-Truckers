@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Truck</title>
+    <link rel="stylesheet" href="register_truck.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Register a New Truck</h1>
+        </header>
+        <main>
+            <form action="register_truck.php" method="POST" class="form">
+                <div class="form-group">
+                    <label for="truck_id">Truck ID:</label>
+                    <input type="text" id="truck_id" name="truck_id" required>
+                </div>
+                <div class="form-group">
+                    <label for="latitude">Latitude:</label>
+                    <input type="text" id="latitude" name="latitude" required>
+                </div>
+                <div class="form-group">
+                    <label for="longitude">Longitude:</label>
+                    <input type="text" id="longitude" name="longitude" required>
+                </div>
+                <button type="submit">Register Truck</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Trucking Company. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

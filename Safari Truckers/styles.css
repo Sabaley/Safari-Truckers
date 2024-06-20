@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f6f5f7;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+#map {
+    width: 80%;
+    height: 60%;
+}
+
+#info {
+    margin-top: 20px;
+    width: 80%;
+}
+
+#truck-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#truck-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    padding: 10px;
+}

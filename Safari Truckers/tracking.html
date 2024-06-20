@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Truck Tracking</title>
+    <link rel="stylesheet" href="tracking.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <style>
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 5,
+                center: { lat: 37.7749, lng: -122.4194 } // Initial center of the map
+            });
+
+            // Fetch truck positions from the server
+            fetch('get_positions.php')
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(position => {
+                        new google.maps.Marker({
+                            position: { lat: position.latitude, lng: position.longitude },
+                            map: map,
+                            title: 'Truck ID: ' + position.truck_id
+                        });
+                    });
+                });
+        }
+
+        window.onload = initMap;
+    </script>
+</body>
+</html>

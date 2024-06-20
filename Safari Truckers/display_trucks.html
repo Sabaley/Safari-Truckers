@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck and Driver List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('get_trucks_with_drivers.php')
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('trucks-table-body');
+                    data.forEach(truck => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${truck.truck_id}</td>
+                            <td>${truck.truck_name}</td>
+                            <td>${truck.driver_name}</td>
+                            <td>${truck.driver_email}</td>
+                            <td>${truck.latitude}</td>
+                            <td>${truck.longitude}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Error fetching truck data:', error));
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Truck and Driver List</h1>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Truck ID</th>
+                        <th>Truck Name</th>
+                        <th>Driver Name</th>
+                        <th>Driver Email</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                    </tr>
+                </thead>
+                <tbody id="trucks-table-body">
+                    <!-- Data will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <p>&copy; 2024 Trucking Company. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

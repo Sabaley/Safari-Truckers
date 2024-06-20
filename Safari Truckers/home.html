@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <!-- <link rel="icon" href="/images/favicon-enhanced.png"> -->
+  <link rel="stylesheet" href="home1.css" />
+  <!-- <link rel="manifest" href="manifest.json"> -->
+  <link rel="apple-touch-icon" href="/images/favicon-enhanced.png" />
+  <link rel="shortcut icon" href="C:\Users\User\Documents\Health Logos • Healthcare Logo • Nutrition Logo _ LogoGarden.jpeg" type="image/x-icon">
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .back-top-wrap {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: #80F7D1;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    z-index: 100;
+  }
+
+  .back-top-wrap:hover {
+    background-color: #00a2ff;
+    color: #80F7D1;
+  }
+
+  .back-top-wrap:hover .fas.fa-arrow-up {
+    color: white;
+  }
+
+  .fas.fa-arrow-up {
+    color: #00488F;
+    transition: 0.3s ease-in-out;
+  }
+</style>
+
+<body onload="myFunction()">
+  <div class="loading-wrapper">
+    <img src=" " id="loading" />
+  </div>
+
+  <!-- Back to top button -->
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <header>
+    <nav class="nav" id="nav">
+      <div class="nav-links" id="navLinks">
+        <ul class="links" id="navmenu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES </a></li>
+          <li><a href="call.html">CONTACT US </a></li>
+          <li><a href="profile.php">VIEW PROFILE</a></li>
+        </ul>
+      </div>
+      <button class="login-button"><a href="login-signup.html">SignUp / Login</a></button>
+      <div class="hamburger" id="ham">
+        <i class="cancel fa-solid fa-xmark"></i>
+
+        <svg class="burger" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+          </path>
+        </svg>
+      </div>
+    </nav>
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="">Home</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES </a></li>
+        <li><a href="./therapy/contact.html">CONTACT US </a></li>
+        <li><a href="profile.php">PROFILE</a></li>
+      </ul>
+    </div>
+     <div class="content">
+      <!--<h1>Welcome to Healthista</h1-->
+      <div class="container">
+        <h3><span class="auto-type" style="font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></a></span></h3>
+      </div> 
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["Welcome to Safari Truckers."],
+          typeSpeed: 50,
+          backspeed: 50,
+          loop: true
+        })
+      </script>
+      <!-- <a href="#services" class="rainbow-button" alt="Explore"></a> -->
+    </div>
+
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1 data-aos="flip-right">About Us</h1>
+    <div class="max-width">
+      <div class="about-content">
+        <p data-aos="fade-left" class="text-1"> We have created a user friendly website that revolutionizes trucking by providing security and efficient driver management systems while prioritizing your needs.
+            to provide a<span>one step solution</span> for your trucking. </p>
+          <p data-aos="fade-left" class="text-3">We give everyone  <span>peace of mind </span>with the
+            help of<span> Safari Truckers.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <h1>Our Services</h1>
+    <div data-aos="zoom-in" data-aos-duration="800" class="container">
+      <div class="responsive audio">
+        <div class="round-image">
+          <img src="./images/frontpage/audiof.jpg" alt=" " loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Security</h2>
+          <p>We provide rapid response and reports to connected authorities in case of any complaints.            
+          </p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="description">
+          <h2>Driver Management</h2>
+          <p>
+            We recommend the best drivers available and offer efficient driver management systems.
+          </p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive yoga">
+        <div class="round-image">
+          <img src="./images/frontpage/yogaf.jpg" alt=" " loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Truck insurance</h2>
+          <p>
+            We guide truckers to comprehensive and tested insurance services.
+          </p>
+          <a href="insurance.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive laugh">
+        <div class="round-image">
+          <img src="./images/frontpage/laughf.jpg" alt=" " />
+        </div>
+        <div class="description">
+          <h2>Tracking</h2>
+          <p>
+            Get real time location for trucks and alerts in route chandes and any anomalies.
+          </p>
+          <a href="tracking.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+    
+  </section>
+
+  <!-- Testimonials Section -->
+ 
+  <!-- Faq section -->
+  
+
+  <!-- footer start -->
+  <footer>
+    <div class="footer-container">
+      <!--logo and info column-->
+      <div class="col">
+        <!--logo insert-->
+        <img src="./images/logo.png" alt="logo" class="footlogo" />
+        <div class="footercontent">
+          <h2 class="footerheading">Safari Truckers</h2>
+          <p class="footerpara">Trucking Website</p>
+        </div>
+      </div>
+
+      <!--ADDRESS COLUMN-->
+
+      <div class="footer-side-col">
+        <div class="col">
+          <h3>
+            ADDRESS
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Nairobi,Kenya.</p>
+          <p class="email-id"><a href="#">SafariTrucking@gmail.com</a></p>
+        </div>
+        <!--HOME COLUMN-->
+        <div class="col">
+          <h3>HOME</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+        <!--OUR SERVICES COLUMN-->
+        <div class="col">
+          <h3>
+            SERVICES
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li>
+              <a href="http://127.0.0.1:5501/therapy/spritiual.html#">Driver's</a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5501/therapy/yoga.html#">Security</a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5501/therapy/laugh.html#">Tracking</a>
+            </li>
+            <li>
+              <a href="insurances.html">Insurances</a>
+            </li>
+          </ul>
+        </div>
+        <!--CONTACTS COLUMN-->
+        <div class="col">
+          <h3>
+            CONTACTS
+            <div class="underline"><span></span></div>
+          </h3>
+          <div class="social-menu">
+            <ul>
+              <a href="#" target="_blank">
+                <li id="social-twitter"><i class="fab fa-2x fa-twitter"></i></li>
+              </a>
+              <a href="#" target="_blank">
+                <li id="social-github"><i class="fab fa-2x fa-github"></i></li>
+              </a>
+              <a href="#" target="_blank">
+                <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+
+    let preloader = document.querySelector(".loading-wrapper");
+    function myFunction() {
+      preloader.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    let navbar = document.querySelector("#nav");
+    let navmenu = document.querySelector("#navmenu");
+
+    window.onscroll = function () {
+      if (window.pageYOffset >= navmenu.offsetTop) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
+    };
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./serviceworker.js')
+          .then((reg) => console.log('Success', reg.scope))
+          .catch((err) => console.log('Error', err))
+      })
+    }
+  </script>
+    <script src="./therapy/contact.html"></script>
+    <script src="index.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
